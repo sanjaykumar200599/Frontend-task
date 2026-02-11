@@ -24,4 +24,6 @@ This project emphasizes semantic structure, accessibility, and proper usage of H
 
 ---
 
+CSS is ongoing!!
+
 
