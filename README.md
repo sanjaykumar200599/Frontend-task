@@ -1,29 +1,40 @@
-# HTML5 Design Task
+HTML & CSS Assignment – Repository Overview
 
-This repository contains the implementation of the given design using **HTML5 only**, as per the assignment instructions.
+This repository is structured to demonstrate HTML and CSS concepts using separate Git branches, following good version-control practices.
 
-## Overview
-The page is developed without using any CSS or JavaScript and focuses on demonstrating a strong understanding of HTML5 concepts. The structure and content are implemented based on the provided design reference.
+Branch Overview
 
-## HTML Concepts Covered
-- HTML5 document structure and semantics
-- Text and content elements (headings, paragraphs, lists, links)
-- Forms with input types, labels, validation, fieldsets, and legends
-- Media elements (images, audio, video) with accessibility considerations
-- Tables for structured data representation
-- Global attributes and meta tags
-- Accessibility best practices
-- SEO-related meta information
-- HTML symbol entities
+main
+This branch serves as the overview and documentation branch for the project.
 
-## Technologies Used
-- HTML5
+html-only
+Contains the complete implementation using HTML5 only, focusing on semantic structure, accessibility, and content organization.
 
-## Notes
-This project emphasizes semantic structure, accessibility, and proper usage of HTML elements rather than visual styling, as styling and scripting were intentionally excluded.
+css-only
+Contains the CSS styling applied to the HTML structure, focusing on layout, typography, colors, responsiveness, and UI enhancements.
 
----
+Purpose of Branch Separation
 
-CSS is ongoing!!
+The project is intentionally divided into multiple branches to:
 
+Demonstrate a clear separation of concerns
 
+Show individual understanding of HTML structure and CSS styling
+
+Practice professional Git branching workflows
+
+Each branch can be reviewed independently to evaluate specific skills.
+
+Technologies Used
+
+HTML5
+
+CSS3
+
+Notes
+
+No JavaScript or external frameworks are used.
+
+The main branch is kept clean for documentation purposes.
+
+Reviewers are encouraged to switch between branches to view individual implementations.
