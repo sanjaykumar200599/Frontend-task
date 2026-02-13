@@ -76,14 +76,7 @@ nav li {
 
 nav li:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.25);
-}
-
-
-nav a {
-  display: block;
-  color: #00bcd4;
-  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(15, 124, 178, 0.25);
 }
 
 nav a:hover {
@@ -91,9 +84,22 @@ nav a:hover {
   text-decoration: none;
 }
 
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav svg {
+  width: 18px;
+  height: 18px;
+  stroke: #00d2ff;
+}
+
 main {
   padding: 20px 0;
 }
+
 
 section {
   background-color: #1a1a1a;
@@ -439,4 +445,14 @@ form br {
   display: block;
   content: "";
   margin-top: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+.grid-container > section {
+  grid-column: span 12;
 }

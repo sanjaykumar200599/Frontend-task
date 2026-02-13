@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,17 +29,17 @@
 <nav aria-label="Table of Contents">
   <h2>Table of Contents</h2>
   <ol>
-    <li><a href="#foundations">Foundations and Milestones</a></li>
-    <li><a href="#inquiry">Internet History Inquiry</a></li>
-    <li><a href="#visual">Visual History</a></li>
-    <li><a href="#timeline">Timeline of Key Protocols</a></li>
+    <li><a href="#foundations"><i data-lucide="network"></i> Foundations and Milestones</a></li>
+    <li><a href="#inquiry"><i data-lucide="list"></i> Internet History Inquiry</a></li>
+    <li><a href="#visual"><i data-lucide="globe"></i> Visual History</a></li>
+    <li><a href="#timeline"><i data-lucide="sliders"></i> Timeline of Key Protocols</a></li>
   </ol>
 </nav>
 
 <hr>
 
-<main>
-<section id="foundations">
+<main class="grid-container">
+ <section id="foundations">
   <h2>Foundations and Milestones</h2>
 
   <p>
@@ -72,22 +73,20 @@
         "The Web is more a social creation than a technical one. I designed it for a social effect — to help people work together — and not as a technical toy." — <cite>Tim Berners-Lee</cite>
     </blockquote>
 
-    <p>
+  <p>
     Early web pages were written in basic HTML, similar to the following code snippet often used for demonstration:
   </p>
 
-    <pre>
-    &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-    &lt;body&gt;
-    &lt;h1&gt;Welcome to the Web&lt;/h1&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-    </pre>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;Welcome to the Web&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 
 </section>
-
-<hr>
 
 <section id="inquiry">
   <h2>Internet History Inquiry</h2>
@@ -150,10 +149,11 @@
   </p>
 
   <h3>Early Infrastructure</h3>
-  <img alt="placeholder image" src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=80" width="400">
-  <figcaption>
-    Figure 1: A conceptual representation of a distributed network node.
-  </figcaption>
+  <figure>
+     <img alt="placeholder image" src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=80" width="400">
+    <figcaption>Figure 1: A conceptual representation of a distributed network node.</figcaption>
+  </figure>
+ 
   
 </section>
 
@@ -178,8 +178,6 @@
     Your browser does not support the audio element.
   </audio>
 </section>
-
-<hr>
 
 <section id="timeline">
   <h2>Timeline of Key Protocols</h2>
@@ -222,5 +220,8 @@
     <a href="#Top">Back to top</a>
 </footer>
 
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
