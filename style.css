@@ -146,7 +146,8 @@ p {
 .feature-link {
   text-decoration: none;
   color: inherit;
-  display: block;
+ display: flex;
+  flex-direction: column;
 }
 
 
@@ -260,12 +261,15 @@ p {
 .video-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 480px;
+  max-height: 520px;
+  min-height: 320px;
   background: #000;
   border-radius: 12px;
   border: 1px solid #333;
   overflow: hidden;
 }
+
 
 .video-wrapper video {
   width: 100%;
