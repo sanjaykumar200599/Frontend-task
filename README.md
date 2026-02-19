@@ -1,6 +1,6 @@
 # HTML & CSS  & JS Assignment – Repository Overview
 
-This repository is structured to demonstrate **HTML and CSS concepts using separate Git branches**, following good version-control practices.
+This repository is structured to demonstrate **HTML, CSS and JS concepts using separate Git branches**, following good version-control practices.
 
 ---
 
