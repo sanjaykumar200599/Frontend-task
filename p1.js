@@ -10,35 +10,35 @@ console.log('5' + 2);
 // 2. String - Number
 console.log('5' - 2);
 // Output: 3
-// Explanation: '-' triggers numeric conversion.
+// Explanation: '-' triggers numeric conversion
 // '5' is converted to number 5 → 5 - 2 = 3
 
 
 // 3. Boolean + Number
 console.log(true + 1);
 // Output: 2
-// Explanation: true becomes 1 during numeric conversion.
+// Explanation: true becomes 1 during numeric conversion
 // 1 + 1 = 2
 
 
 // 4. null + Number
 console.log(null + 1);
 // Output: 1
-// Explanation: null converts to 0 in numeric context.
+// Explanation: null converts to 0 in numeric context
 // 0 + 1 = 1
 
 
 // 5. undefined + Number
 console.log(undefined + 1);
 // Output: NaN
-// Explanation: undefined converts to NaN in numeric context.
+// Explanation: undefined converts to NaN in numeric context
 // NaN + 1 = NaN
 
 
 console.log('5' == 5);  
 // Output: true
-// Explanation: == performs type coercion before comparison.
+// Explanation: == performs type coercion before comparison
 
 console.log('5' === 5); 
 // Output: false
-// Explanation: === checks both value and type (no coercion).
+// Explanation: === checks both value and type (no coercion)
