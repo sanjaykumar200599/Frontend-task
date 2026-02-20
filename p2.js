@@ -1,7 +1,7 @@
-// Write a function that takes marks (0–100) and returns grade: 90–100 → A, 75–89 → B,50–74 → C, Below 50 → Fail. Validate invalid inputs and avoid deeply nested if-else
+//Write a function that takes marks (0–100) and returns grade: 90–100 → A, 75–89 → B,50–74 → C, Below 50 → Fail. Validate invalid inputs and avoid deeply nested if-else
 
 function getGrade(marks) {
-    // Validate input
+    //Validate input
     if (typeof marks!=="number" || isNaN(marks)) {
         return "Invalid input: Marks must be a number";
     }
@@ -17,7 +17,7 @@ function getGrade(marks) {
     return "Fail";
 }
 
-// Test cases
+//Test cases
 console.log(getGrade(94)); 
 console.log(getGrade(80));  
 console.log(getGrade(60));  
