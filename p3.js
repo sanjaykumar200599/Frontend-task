@@ -7,10 +7,10 @@ function formatUser(name,email) {
 
     const [username,domain] = trimmedEmail.split("@");
 
-    // Mask email(first 2 chars visible)
+    //Mask email(first 2 chars visible)
     const maskedUsername = username.slice(0,2) + "***";
 
-    // Return formatted string using template literals
+    //Return formatted string using template literals
     return `User: ${trimmedName} | Email: ${maskedUsername}@${domain}`;
 }
 
