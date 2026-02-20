@@ -5,7 +5,7 @@ function formatUser(name,email) {
     const trimmedName =name.trim().toUpperCase();
     const trimmedEmail =email.trim();
 
-    const [username,domain] = trimmedEmail.split("@");
+    const [username,domain] =trimmedEmail.split("@");
 
     //Mask email(first 2 chars visible)
     const maskedUsername = username.slice(0,2) + "***";
