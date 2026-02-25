@@ -18,7 +18,7 @@ function fetchComments(){
   });
 }
 
-console.log("fetching data...");
+console.log("fetching data....");
 
 Promise.all([fetchUser(), fetchPosts(),fetchComments()])
   .then(results => {
