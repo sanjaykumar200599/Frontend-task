@@ -20,7 +20,7 @@ shallowcopy.name = "Virat";
 shallowcopy.address.city = "Bangalore";
 
 console.log("Original: ",original);
-console.log("shallow Copy: ", shallowcopy);
+console.log("shallow Copy: ",shallowcopy);
 
 const deepCopy = structuredClone(original);
 console.log(deepCopy);
