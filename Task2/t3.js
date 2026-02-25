@@ -13,5 +13,5 @@ students.delete("Rahul");
 
 console.log("Iterating over remaining students:");
 for (const [name,marks] of students) {
-  console.log(name, marks);
+  console.log(name,marks);
 }
