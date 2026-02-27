@@ -14,18 +14,18 @@ const searchInput = document.getElementById('searchInput');
 const visibleCountLabel = document.getElementById('visibleCount');
 const totalCountLabel = document.getElementById('totalCount');
 
-// Helper Function: Get Initials for Avatar
+// Helper Function to get initial
 function getInitials(name) {
     return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
 }
 
-// Helper Function: Format Current Date
+// Helper Function to get Current Date
 function getCurrentDate() {
     const options = { month: 'short', day: '2-digit', year: 'numeric' };
-    return new Date().toLocaleDateString('en-US', options);
+    return new Date().toLocaleDateString('en-US',options);
 }
 
-// RENDER FUNCTIONALITY
+// Render functionality
 function renderStudents(data = students) {
     studentListContainer.innerHTML = ''; 
     
@@ -77,15 +77,13 @@ function renderStudents(data = students) {
     });
 }
 
-//  ADD FUNCTIONALITY 
+//  add functionality
 addStudentForm.addEventListener('submit', (e) => {
     e.preventDefault();
-
     const name = document.getElementById('name').value;
     const studentId = document.getElementById('studentId').value;
     const department = document.getElementById('department').value;
     const percentage = parseInt(document.getElementById('percentage').value);
-
     const newStudent = {
         id: Date.now(), 
         name,
@@ -101,26 +99,20 @@ addStudentForm.addEventListener('submit', (e) => {
     addStudentForm.reset(); 
 });
 
-// DELETE FUNCTIONALITY 
+//delete functionality
 window.deleteStudent = function(id) {
     if(confirm('Are you sure you want to remove this student?')) {
         students = students.filter(student => student.id !== id);
         renderStudents();
     }
 };
-
-//  SEARCH FUNCTIONALITY
+ //search functionality
 searchInput.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
-    
     const filtered = students.filter(student => 
-        student.name.toLowerCase().includes(term) || 
-        student.studentId.toLowerCase().includes(term) ||
-        student.department.toLowerCase().includes(term)
+        student.name.toLowerCase().includes(term) || student.studentId.toLowerCase().includes(term) || student.department.toLowerCase().includes(term)
     );
-    
     renderStudents(filtered);
 });
-
 
 renderStudents();
