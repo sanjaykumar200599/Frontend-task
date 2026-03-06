@@ -29,17 +29,22 @@ function App() {
 
   const handleSubmit = () => {
     setStatus("submitting");
-    setTimeout(() => {
-      setStatus("success");
-    }, 2000);
   };
+
+  useEffect(() => {
+
+    if (status === "submitting") {
+      const timer = setTimeout(() => {
+        setStatus("success");
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
 
   return (
     <div className="container">
-
       <h2>Create Account</h2>
 
-      {/* Step Progress Indicator */}
       <StepIndicator step={step} />
 
       {step === 1 && (
