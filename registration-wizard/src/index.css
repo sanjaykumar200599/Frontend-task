@@ -15,7 +15,6 @@ body{
 }
 
 /* CONTAINER */
-
 .container{
   width:600px;
   background:white;
@@ -159,7 +158,6 @@ button:hover{
 }
 
 /* SUCCESS */
-
 .success-box{
   max-width:500px;
   margin:60px auto 0 auto;
