@@ -154,7 +154,8 @@ button:hover{
 .error{
   color:#dc2626;
   font-size:13px;
-  margin-bottom:10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 /* SUCCESS */
