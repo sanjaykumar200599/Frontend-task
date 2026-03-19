@@ -36,6 +36,7 @@ Each branch can be reviewed independently to evaluate specific skills.
 - HTML5  
 - CSS3  
 - JAVASCRIPT
+- REACT
 ---
 
 ## Notes
